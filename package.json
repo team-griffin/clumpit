@@ -1,6 +1,6 @@
 {
   "name": "clumpit",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "dist/cjs/clumpit.js",
   "module": "dist/es/clumpit.js",
   "repository": "git@github.com:team-griffin/clumpit.git",
