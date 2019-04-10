@@ -1,0 +1,37 @@
+{
+  "name": "clumpit",
+  "version": "0.0.0",
+  "main": "dist/cjs/clumpit.js",
+  "module": "dist/es/clumpit.js",
+  "repository": "git@github.com:team-griffin/clumpit.git",
+  "author": "Joshua Thornton <jthornton1@godaddy.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup --config ./rollup.config.js",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-typescript": "^7.3.3",
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/git": "^7.0.8",
+    "husky": "^1.3.1",
+    "rollup": "^1.9.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-local-resolve": "^1.0.7",
+    "semantic-release": "^15.13.3"
+  },
+  "dependencies": {
+    "lodash.keyby": "^4.6.0",
+    "lodash.uniqby": "^4.7.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint --edit"
+    }
+  }
+}
